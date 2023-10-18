@@ -1,11 +1,14 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { FaGoogle, FaGithub } from "react-icons/fa";
 import app from "../firebase/firebase.config";
 
 const Login = () => {
+    const location = useLocation()
+    const navigate = useNavigate()
+    console.log('login page location', location)
     const auth = getAuth(app)
     const provider = new GoogleAuthProvider()
     const googleSignUp = () =>{
@@ -19,10 +22,9 @@ const Login = () => {
     }
 
 
-
-
-
     const { login } = useContext(AuthContext)
+    const [succes, setSucces] = useState('')
+
     const handleLogin = e => {
         e.preventDefault();
         const form = e.target
@@ -33,6 +35,8 @@ const Login = () => {
         login(email,password)
         .then(result =>{
             console.log(result.user)
+            setSucces('User login succesfully')
+            navigate(location?.state ? location.state : '/');
 
         })
         .catch(error =>{
@@ -74,6 +78,9 @@ const Login = () => {
                     Github</button>
             </div>
             <div className="text-center mx-auto">
+                {
+                    succes && <p className="text-blue-500">{succes}</p>
+                }
             </div>
             <div className="text-center mt-4 ">
                 <p>Do Not Have An Account?

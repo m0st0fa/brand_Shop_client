@@ -52,6 +52,7 @@ export const AuthContext = createContext(null)
         user,
         logOut,
         createUser,
+        loading,
         login
         
 

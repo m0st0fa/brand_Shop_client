@@ -32,8 +32,7 @@ const NavBar = () => {
                 </div>
                 <div>
                     <div className="flex items-center gap-2">
-                        <img src="https://i.ibb.co/z5G6rf5/apple.png" alt="img" />
-                        <h1 className="text-4xl font-bold ">Gorib ar dokan</h1>
+                        <img className="w-48 rounded-lg" src="https://i.ibb.co/wC2KvZb/Tech-Shop-Logo.png" alt="img" />
                     </div>
                 </div>
 
