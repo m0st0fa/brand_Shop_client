@@ -16,8 +16,9 @@ const NavBar = () => {
     }
     const Navlinks = <>
         <li> <Link to='/'>Home</Link></li>
+        <li> <Link to='/addProduct'>AddProduct</Link></li>
+        <li> <Link to='/addProduct'>My Cart</Link></li>
         <li> <Link to='/login'>Login</Link></li>
-        <li> <Link to='/'>brand</Link></li>
     </>
     return (
         <div className="navbar bg-gray-200">
