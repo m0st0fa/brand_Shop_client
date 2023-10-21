@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import Banner from "./Banner";
+import DealsOfTheDay from "./DealsOfTheDay";
 import ProductAdd from "./ProductAdd";
 
 
@@ -23,6 +24,7 @@ const Home = () => {
             }
 
             </div>
+            <DealsOfTheDay></DealsOfTheDay>
         </div>
     );
 };

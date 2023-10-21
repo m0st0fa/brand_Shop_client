@@ -6,7 +6,7 @@ const ProductDeatils = () => {
     console.log(deatils)
     const { image,description,name } = deatils;
     return (
-        <div className=" bg-green-200">
+        <div className="bg-green-200">
             <div className="hero-content flex-col lg:flex-row">
                 <img src={image} className=" w-1/2 h-96" />
                 <div>
