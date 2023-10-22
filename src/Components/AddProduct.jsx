@@ -39,7 +39,7 @@ const AddProduct = () => {
             <h2 className="text-3xl text-green-500 font-bold">Add Product</h2>
             <form onSubmit={hadnldeAddProduct} >
                 {/* form name and quantity row */}
-                <div className="md:flex  ">
+                <div className="  md:flex ">
                     <div className="form-control w-1/2">
                         <label className="label">
                             <span className="label-text"> Name</span>

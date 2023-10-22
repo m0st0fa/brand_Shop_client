@@ -8,6 +8,7 @@ import AuthProvider from './AuthProvider/AuthProvider';
 import AddProduct from './Components/AddProduct';
 import Home from './Components/Home';
 import Login from './Components/Login';
+import MyCart from './Components/MyCart';
 import ProductAddDetails from './Components/ProductAdd';
 import ProductAddDeatils from './Components/ProductAddDeatils';
 import ProductDeatils from './Components/ProductDeatils';
@@ -54,8 +55,12 @@ const router = createBrowserRouter([
         element: <ProductDeatils></ProductDeatils>,
         loader: ({ params }) => fetch(`http://localhost:5001/deatils/${params.id}`)
       },
+      {
+        path: '/Carts',
+        element: <MyCart></MyCart>,
+        loader: () => fetch('http://localhost:5001/carts')
 
-
+      },
       {
         path: '/addProduct',
         element: <AddProduct></AddProduct>,

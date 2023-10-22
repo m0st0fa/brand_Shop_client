@@ -112,7 +112,7 @@ const UpdateProductDeatils = () => {
                     </label>
                 </div>
                 <div>
-                    <input type="submit" value="add Producet" className="btn btn-block bg-black text-white mt-8" />
+                    <input type="submit" value="Update Producet" className="btn btn-block bg-black text-white mt-8" />
                 </div>
             </form>
         </div>

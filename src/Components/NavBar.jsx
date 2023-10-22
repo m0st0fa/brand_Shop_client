@@ -1,10 +1,11 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
 
 
 const NavBar = () => {
+
     const { user, logOut } = useContext(AuthContext)
 
     const handleSingOut = () => {
@@ -15,10 +16,11 @@ const NavBar = () => {
             })
     }
     const Navlinks = <>
-        <li> <Link to='/'>Home</Link></li>
-        <li> <Link to='/addProduct'>AddProduct</Link></li>
-        <li> <Link to='/addProduct'>My Cart</Link></li>
-        <li> <Link to='/login'>Login</Link></li>
+        <li> <NavLink to='/'>Home</NavLink></li>
+        <li> <NavLink to='/addProduct'>AddProduct</NavLink></li>
+        <li> <NavLink to='/Carts'>My Cart</NavLink></li>
+        <li> <Link to='/'>Blogs</Link></li>
+        {/* <button onClick={changeTheme} className="btn btn-secondary">Change theme</button> */}
     </>
     return (
         <div className="navbar bg-gray-200">
@@ -47,7 +49,6 @@ const NavBar = () => {
                 {
                     user ? <div className="flex items-center gap-2">
                         <h3 >{user.displayName}</h3>
-                        <img className="w-10 rounded-full" src={user.photoURL} alt="" />
                         <button onClick={handleSingOut} className="btn">Sign Out</button>
                     </div>
                         :
