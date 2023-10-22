@@ -26,7 +26,7 @@ const Home = () => {
 
             </div>
             <DealsOfTheDay></DealsOfTheDay>
-            <div className="mb-3">
+            <div className="mb-4">
                 <Electronics></Electronics>
             </div>
         </div>
