@@ -15,7 +15,7 @@ const ProductDeatils = () => {
         const description = formData.get("description");
         const cartProduct = { name, image, price, description }
         console.log(cartProduct);
-        fetch('http://localhost:5001/carts', {
+        fetch('https://brand-shop-server-54jwmy5uy-mostofas-projects-b43a9202.vercel.app/carts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -36,7 +36,9 @@ const ProductDeatils = () => {
 
     };
     return (
-        <div className="bg-green-200">
+        <div className="bg-gray-200" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
             <div className="hero-content flex-col lg:flex-row">
                 <img src={image} className="w-1/2 h-96" alt="Product Image" />
                 <div>

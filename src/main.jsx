@@ -9,6 +9,7 @@ import AddProduct from './Components/AddProduct';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import MyCart from './Components/MyCart';
+import PriviteRoutes from './Components/PriviteRoutes';
 import ProductAddDetails from './Components/ProductAdd';
 import ProductAddDeatils from './Components/ProductAddDeatils';
 import ProductDeatils from './Components/ProductDeatils';
@@ -43,22 +44,26 @@ const router = createBrowserRouter([
       {
         path: '/products/:brandName',
         element: <ProductAddDeatils></ProductAddDeatils>,
-        loader: ({ params }) => fetch(`http://localhost:5001/product/${params.brandName}`)
+        loader: ({ params }) => fetch(`https://brand-shop-server-54jwmy5uy-mostofas-projects-b43a9202.vercel.app/product/${params.brandName}`)
       },
       {
         path: 'update/:id',
-        element: <UpdateProductDeatils></UpdateProductDeatils>,
-        loader: ({ params }) => fetch(`http://localhost:5001/update/${params.id}`)
+        element: <PriviteRoutes><UpdateProductDeatils></UpdateProductDeatils></PriviteRoutes>,
+        loader: ({ params }) => fetch(`https://brand-shop-server-54jwmy5uy-mostofas-projects-b43a9202.vercel.app/update/${params.id}`)
       },
       {
         path: '/deatils/:id',
-        element: <ProductDeatils></ProductDeatils>,
-        loader: ({ params }) => fetch(`http://localhost:5001/deatils/${params.id}`)
+        element: <PriviteRoutes>
+          <ProductDeatils></ProductDeatils>
+        </PriviteRoutes>,
+        loader: ({ params }) => fetch(`https://brand-shop-server-54jwmy5uy-mostofas-projects-b43a9202.vercel.app/deatils/${params.id}`)
       },
       {
         path: '/Carts',
-        element: <MyCart></MyCart>,
-        loader: () => fetch('http://localhost:5001/carts')
+        element: <PriviteRoutes>
+          <MyCart></MyCart>
+        </PriviteRoutes>,
+        loader: () => fetch('https://brand-shop-server-54jwmy5uy-mostofas-projects-b43a9202.vercel.app/carts')
 
       },
       {

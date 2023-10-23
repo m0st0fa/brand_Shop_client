@@ -6,7 +6,7 @@ const DealsOfTheDay = () => {
             <h1 className="text-5xl font-bold text-center mb-10">Deal of the day section</h1>
             <div className="grid md:grid-cols-2 gap-4 rounded-lg shadow-orange-300">
                 {/* Product 1 */}
-                <div className="border p-5">
+                <div className="border p-5"  data-aos="fade-right">
                     <div className="flex">
                         <div className="w-1/2">
                             <h1 className="font-bold text-4xl text-white-200 mb-2 mt-4">Lenovo </h1>
@@ -32,7 +32,7 @@ const DealsOfTheDay = () => {
                 </div>
 
                 {/* Product 2 - Add a similar section with different details and image */}
-                <div className="border p-5">
+                <div className="border p-5"  data-aos="fade-left">
                     <div className="flex">
                         <div className="w-1/2">
                             <h1 className="font-bold text-4xl text-white-200 mb-2 mt-4">Iphone 8 plus
@@ -59,14 +59,14 @@ const DealsOfTheDay = () => {
                 </div>
 
                 {/* Product 3 - Add another section with different details and image */}
-                <div className="border p-5">
+                <div className="border p-5"  data-aos="fade-right">
                     <div className="flex">
                         <div className="w-1/2">
                             <h1 className="font-bold text-4xl text-white-200 mb-2 mt-4">Poco x3</h1>
                             <h2 className="text-2xl"> Price:$320 <span className="text-red-500 line-through ">$60</span></h2>
                             <div className="rating mt-4">
                                 <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400"  />
+                                <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" checked />
                                 <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" />
@@ -83,16 +83,16 @@ const DealsOfTheDay = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border p-5">
+                <div className="border p-5"  data-aos="fade-left">
                     <div className="flex">
                         <div className="w-1/2">
                             <h1 className="font-bold text-4xl text-white-200 mb-2 mt-4">Samsung J2</h1>
                             <h2 className="text-2xl"> Price:$220 <span className="text-red-500 line-through ">$60</span></h2>
                             <div className="rating mt-4">
                                 <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400"  />
                                 <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" />
-                                <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400"checked />
+                                <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" checked />
                                 <input type="radio" name="rating-3" className="mask mask-star-2 bg-orange-400" />
                             </div>
                             <div>

@@ -14,7 +14,7 @@ const Home = () => {
             .then(data => setProduct(data))
     }, [])
     return (
-        <div>
+        <div className="">
             <Banner></Banner>
             <ProductAdd></ProductAdd>
             <h3 className=" text-5xl text-center font-bold text-red-500 mb-5"> Our Services</h3>

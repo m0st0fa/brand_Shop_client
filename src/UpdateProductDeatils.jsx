@@ -22,7 +22,7 @@ const UpdateProductDeatils = () => {
             const type = formData.get("type");
             const updateProduct = { name ,brand,price,image,description,rating,type};
             console.log(updateProduct);
-            fetch(`http://localhost:5001/update/${_id}`, {
+            fetch(`https://brand-shop-server-54jwmy5uy-mostofas-projects-b43a9202.vercel.app/update/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

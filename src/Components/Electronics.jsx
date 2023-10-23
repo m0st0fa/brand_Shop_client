@@ -6,7 +6,9 @@ const Electronics = () => {
             <h1 className="text-5xl font-bold  text-gray-600 text-center mb-10">Our Electronics Section</h1>
             <div className="grid md:grid-cols-2 gap-10 rounded-lg shadow-orange-300">
                 {/* Product 1*/}
-                <div className=" ring-offset-2 ring rounded p-5">
+                <div className=" ring-offset-2 ring rounded p-5" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div className="flex">
                         <div className="w-1/2">
                             <h1 className="font-bold text-4xl decoration-sky-600 mb-2 mt-4">Cc Camara s21 </h1>
@@ -31,7 +33,9 @@ const Electronics = () => {
                     </div>
                 </div>
 
-                <div className=" ring-offset-2 ring rounded p-5">
+                <div className=" ring-offset-2 ring rounded p-5" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div className="flex">
                         <div className="w-1/2">
                             <h1 className="font-bold text-4xl text-pink-600 mb-2 mt-4">Apple Vr set
@@ -58,7 +62,9 @@ const Electronics = () => {
                 </div>
 
                 {/* Product 3 */}
-                <div className=" ring-offset-2 ring rounded p-5">
+                <div className=" ring-offset-2 ring rounded p-5" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div className="flex">
                         <div className="w-1/2">
                             <h1 className="font-bold text-4xl text-pink-600 mb-2 mt-4">Camara</h1>
@@ -83,7 +89,9 @@ const Electronics = () => {
                     </div>
                 </div>
                 {/* product 4 */}
-                <div className=" ring-offset-2 ring rounded p-5">
+                <div className=" ring-offset-2 ring rounded p-5" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                     <div className="flex">
                         <div className="w-1/2">
                             <h1 className="font-bold text-4xl text-pink-600 mb-2 mt-4">Gaming Remote</h1>

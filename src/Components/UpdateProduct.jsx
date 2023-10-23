@@ -7,7 +7,9 @@ const UpdateProduct = ({ item }) => {
     return (
         <div>
             <div>
-                <div className="card bg-base-100 shadow-xl outline outline-offset-2 outline-blue-500 my-10">
+                <div className="card bg-base-100 shadow-xl outline outline-offset-2 outline-blue-500 my-10" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
 
                     <img className="w-full h-80 rounded-xl" src={image} alt="" />
                     <hr />

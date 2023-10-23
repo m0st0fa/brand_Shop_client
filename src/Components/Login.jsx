@@ -11,14 +11,17 @@ const Login = () => {
     console.log('login page location', location)
     const auth = getAuth(app)
     const provider = new GoogleAuthProvider()
-    const googleSignUp = () =>{
-        signInWithPopup(auth,provider)
-        .then(result =>{
-            console.log(result.user)
-        })
-        .catch(error =>{
-            console.error(error)
-        })
+    const googleSignUp = () => {
+        signInWithPopup(auth, provider)
+            .then(result => {
+                console.log(result.user);
+                // navigate after login the user 
+                navigate(location?.state ? location.state : '/');
+
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
 
 
@@ -32,16 +35,16 @@ const Login = () => {
         const password = form.password.value
         console.log(email, password)
         // login user 
-        login(email,password)
-        .then(result =>{
-            console.log(result.user)
-            setSucces('User login succesfully')
-            navigate(location?.state ? location.state : '/');
+        login(email, password)
+            .then(result => {
+                console.log(result.user)
+                setSucces('User login succesfully')
+                navigate(location?.state ? location.state : '/');
 
-        })
-        .catch(error =>{
-            console.error(error)
-        })
+            })
+            .catch(error => {
+                console.error(error)
+            })
 
     }
 

@@ -2,11 +2,11 @@
 
 import Swal from "sweetalert2";
 
-const MyCartDeatils = ({ item,setCart,cart }) => {
+const MyCartDeatils = ({ item, setCart, cart }) => {
 
     const { _id, name, price, image, } = item;
 
-    const handleClickToDelete = _id=> {
+    const handleClickToDelete = _id => {
         console.log(_id)
         Swal.fire({
             title: 'Are you sure?',
@@ -18,7 +18,7 @@ const MyCartDeatils = ({ item,setCart,cart }) => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5001/delete/${_id}`, {
+                fetch(`https://brand-shop-server-54jwmy5uy-mostofas-projects-b43a9202.vercel.app/delete/${_id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())
@@ -40,7 +40,9 @@ const MyCartDeatils = ({ item,setCart,cart }) => {
 
     }
     return (
-        <div className="card bg-base-100 shadow-xl outline outline-offset-2 outline-blue-500 my-10">
+        <div className="card bg-base-100 shadow-xl outline outline-offset-2 outline-blue-500 my-10" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
             <img className="w-full h-80 rounded-xl" src={image} alt="" />
             <div className="card-body">
                 <h2 className="card-title font-bold">{name}</h2>

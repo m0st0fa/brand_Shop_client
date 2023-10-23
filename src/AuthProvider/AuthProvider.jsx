@@ -31,7 +31,7 @@ export const AuthContext = createContext(null)
         const unsubscribe = onAuthStateChanged(auth, currentUser =>{
             console.log('user is checking ', currentUser)
             setUser(currentUser)
-            setLoading(true)
+            setLoading(false)
         })
         return () =>{
             unsubscribe;
