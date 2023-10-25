@@ -14,12 +14,12 @@ const Home = () => {
             .then(data => setProduct(data))
     }, [])
     return (
-        <div className="">
+        <div>
             <Banner></Banner>
-            <ProductAdd></ProductAdd>
             <h3 className=" text-5xl text-center font-bold text-red-500 mb-5"> Our Services</h3>
 
             <div className="grid md:grid-cols-3 mt-2 mb-10 gap-5">
+
                 {
                     product.map(item => <ProductAdd key={item._id} item={item} />)
                 }

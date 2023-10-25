@@ -48,7 +48,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'update/:id',
-        element: <PriviteRoutes><UpdateProductDeatils></UpdateProductDeatils></PriviteRoutes>,
+        element: <PriviteRoutes>
+          <UpdateProductDeatils></UpdateProductDeatils>
+        </PriviteRoutes>,
         loader: ({ params }) => fetch(`https://brand-shop-server-54jwmy5uy-mostofas-projects-b43a9202.vercel.app/update/${params.id}`)
       },
       {
@@ -68,7 +70,9 @@ const router = createBrowserRouter([
       },
       {
         path: '/addProduct',
-        element: <AddProduct></AddProduct>,
+        element: <PriviteRoutes>
+                <AddProduct></AddProduct>
+        </PriviteRoutes>,
       },
 
     ]
