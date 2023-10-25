@@ -40,7 +40,7 @@ const AddProduct = () => {
             <form onSubmit={hadnldeAddProduct} >
                 {/* form name and quantity row */}
                 <div className="  md:flex ">
-                    <div className="form-control w-1/2">
+                    <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text"> Name</span>
                         </label>
@@ -48,7 +48,7 @@ const AddProduct = () => {
                             <input type="text" name="name" placeholder=" Name" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control w-1/2">
+                    <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Brand Name</span>
                         </label>
@@ -59,7 +59,7 @@ const AddProduct = () => {
                 </div>
                 {/* form image and price row */}
                 <div className="md:flex ">
-                    <div className="form-control w-1/2">
+                    <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Image</span>
                         </label>
@@ -67,7 +67,7 @@ const AddProduct = () => {
                             <input type="text" name="image" placeholder="Image URL" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control w-1/2">
+                    <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Price</span>
                         </label>
@@ -78,7 +78,7 @@ const AddProduct = () => {
                 </div>
                 {/* form short Description and Rating row */}
                 <div className="md:flex  ">
-                    <div className="form-control w-1/2">
+                    <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Short Description</span>
                         </label>
@@ -86,7 +86,7 @@ const AddProduct = () => {
                             <input type="text" name="description" placeholder="Enter Product Description" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control w-1/2">
+                    <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Rating</span>
                         </label>
@@ -95,7 +95,7 @@ const AddProduct = () => {
                         </label>
                     </div>
                 </div>
-                <div className="form-control w-1/2">
+                <div className="form-control w-full">
                     <label className="label">
                         <span className="label-text">Type</span>
                     </label>

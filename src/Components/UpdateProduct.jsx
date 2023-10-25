@@ -15,13 +15,13 @@ const UpdateProduct = ({ item }) => {
                     <hr />
                     <div className="card-body">
                         <h2 className="card-title font-bold">{name}</h2>
-                        <h2 className="card-title text-red-700 font-bold">Type: {type}</h2>
+                        <h2 className="card-title text-red-700 font-bold">Type:{type}</h2>
                         <div className="flex justify-between ">
                             <h1 className="text-2xl font-bold decoration-slate-700">Brand: {brandName}</h1>
                             <h1 className="text-xl text-red-600">Price: {price}$</h1>
                         </div>
                         <div>
-                            <h1>Review: {rating}</h1>
+                            <h1>Review:{rating}</h1>
                         </div>
                         <div className="card-actions justify-between">
                             <div>
